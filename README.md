@@ -7,6 +7,67 @@
 
 ---
 
+# Execution
+## before execute this 
+- move into this project directory
+  - additional: set environment variable `PTYHONPATH` properly
+## test /w console
+```python
+python output_in_console.py
+```
+### expected output
+```shell
+ python3 output_in_console.py 
+****** 0. left side tree ******
+
+*** traverser testing ***
+
+preorder:  ['A', 'B', 'D', 'C', 'E', 'G', 'H', 'F']
+inorder:  ['D', 'B', 'A', 'G', 'E', 'H', 'C', 'F']
+postorder:  ['D', 'B', 'G', 'H', 'E', 'F', 'C', 'A']
+level order:  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+
+*** utility testing ***
+
+height of tree: 4
+number of terminal nodes: 4
+number of total nodes: 8
+
+*** fin ***
+
+****** 1. right side tree ******
+
+*** traverser testing ***
+
+preorder:  ['+', '*', '*', '/', 'A', 'B', 'C', 'D', 'E']
+inorder:  ['A', '/', 'B', '*', 'C', '*', 'D', '+', 'E']
+postorder:  ['A', 'B', '/', 'C', '*', 'D', '*', 'E', '+']
+level order:  ['+', '*', 'E', '*', 'D', '/', 'C', 'A', 'B']
+
+*** utility testing ***
+
+height of tree: 5
+number of terminal nodes: 5
+number of total nodes: 9
+
+*** fin ***
+```
+
+## test /w unittest
+```
+python -m unittest
+```
+
+### expected output
+```shell
+ python3 -m unittest
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK
+```
+
 # Description
 ```shell
 ├── README.md # 전체적인 프로젝트를 설명하는 문서
